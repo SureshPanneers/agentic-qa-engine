@@ -140,3 +140,9 @@ ENV File Updates
 path : "C:\HandHeldRepos\agentic-qa-engine\.env"
 
 <img width="872" height="251" alt="image" src="https://github.com/user-attachments/assets/e8ea5a53-7c31-4a2e-b63a-ecdbf5e98e56" />
+
+I have tried with GOOGLE_API_KEY for this POC.It was successfull
+
+I tried with Local Ollama(free) ,but unreliable for this multi-step use case.
+
+If you still want to stay fully local/free, we have to try a mid-size model that fits comfortably in 15GB RAM (e.g., qwen2.5:14b at ~9GB, or mistral-nemo at ~7GB) — but I'll be upfront: these are unlikely to be meaningfully more reliable than llama3.1:8b at multi-step tool orchestration. It's a model-capability ceiling, not a size-tuning problem you can fully solve at this scale.
