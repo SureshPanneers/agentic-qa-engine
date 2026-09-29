@@ -141,7 +141,7 @@ path : "C:\HandHeldRepos\agentic-qa-engine\.env"
 
 <img width="872" height="251" alt="image" src="https://github.com/user-attachments/assets/e8ea5a53-7c31-4a2e-b63a-ecdbf5e98e56" />
 
-I have tried with GOOGLE_API_KEY for this POC.It was successfull
+I have tried with GOOGLE_API_KEY for this POC.It was successfull.👍
 
 I tried with Local Ollama(free) ,but unreliable for this multi-step use case.
 
