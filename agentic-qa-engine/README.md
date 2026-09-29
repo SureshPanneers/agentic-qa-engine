@@ -133,3 +133,5 @@ $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","Machine") + ";"
 python main.py "your scenario here in plain English"
 
 That's it — no other setup needed since dependencies, .env, and the Gemini key are already in place.
+
+<img width="872" height="251" alt="image" src="https://github.com/user-attachments/assets/e8ea5a53-7c31-4a2e-b63a-ecdbf5e98e56" />
