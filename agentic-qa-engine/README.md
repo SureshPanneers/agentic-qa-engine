@@ -143,6 +143,36 @@ path : "C:\HandHeldRepos\agentic-qa-engine\.env"
 
 I have tried with GOOGLE_API_KEY for this POC.It was successfull.👍
 
+Google Gemini support added
+What changed:
+
+Installed langchain-google-genai
+
+agent/qa_agent.py now supports LLM_PROVIDER=gemini → uses gemini-2.0-flash by default
+
+.env.example updated with GOOGLE_API_KEY and GEMINI_MODEL
+
+Verified the agent builds correctly with this provider (code-level check passed)
+
+To get a free Gemini API key
+Go to https://aistudio.google.com/apikey
+
+Sign in with a Google account
+Click Create API Key — no billing setup required for the free tier
+Copy the key
+
+Update your .env
+
+notepad C:\HandHeldRepos\agentic-qa-engine\.env
+
+Set:
+
+LLM_PROVIDER=gemini
+GOOGLE_API_KEY=<paste your real key here>.
+
+Once that's saved, run the SauceDemo login scenario using Gemini to see if it handles the multi-step tool-calling more reliably.
+
+=====================================================================================================
 I tried with Local Ollama(free) ,but unreliable for this multi-step use case.
 
 If you still want to stay fully local/free, we have to try a mid-size model that fits comfortably in 15GB RAM (e.g., qwen2.5:14b at ~9GB, or mistral-nemo at ~7GB) — but I'll be upfront: these are unlikely to be meaningfully more reliable than llama3.1:8b at multi-step tool orchestration. It's a model-capability ceiling, not a size-tuning problem you can fully solve at this scale.
